@@ -1,6 +1,12 @@
 # ManagerORM
 ORM Object Relational Mapping Manager. This is an unit that map FDQuery to object&lt;T>
 
+**Requirements**
+Recently Delphi version 
+Support for Generics
+Support for rtti
+Suport for Firedac
+
 **Usage**
 
 1. Declare a class that represents your database entities (Model)
