@@ -57,3 +57,19 @@ end;
       Manager.Post(Car, 'insert into car (Brand, Year, Power) values(:b, :y, :p)', [Brand, Year, Power]);
 
 ``` 
+
+**Dependencies**
+This unit uses Grijjy.Bson.Serialization lib to generate JSON
+```Pascal
+uses ... 
+  Grijjy.Bson.Serialization, // ToJson
+  Grijjy.Bson;               // Json Annotation
+```
+```Shell
+git clone https://github.com/grijjy/GrijjyFoundation.git
+```
+
+Read documentation
+https://grijjy.github.io/GrijjyFoundation/
+
+To remove that dependency just delete uses and implement the method `ToJson()` with your way 
